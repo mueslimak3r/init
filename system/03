@@ -1,0 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: calamber <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/07/29 21:50:44 by calamber          #+#    #+#              #
+#    Updated: 2018/07/29 21:53:10 by calamber         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+You need to edit "/etc/hostname" and probably edit "/etc/hosts to rename
+references to the original hostname (system name) to its current name.

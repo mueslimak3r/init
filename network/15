@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: calamber <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/07/29 20:27:41 by calamber          #+#    #+#              #
+#    Updated: 2018/07/29 20:27:44 by calamber         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+echo "46.19.122.85 intra.42.fr" >> /etc/hosts
+
+# as explained in the last exercise, by associating a domain name with an IP address, rerouting from "46.19.122.85" to "intra.42.fr" is easy. You just need permission to modify /etc/hosts/, which I don't have.

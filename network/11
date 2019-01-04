@@ -1,0 +1,7 @@
+# NAT is the interface between the public networks (internet) and our private network.
+# running:
+
+#!/bin/bash
+traceroute slash16.org
+
+# outputs the address of the NAT server, which is "10.90.1.11".

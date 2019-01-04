@@ -1,0 +1,2 @@
+#!/bin/bash
+dig slash16.org | grep SERVER | sed 's/.*(\(.*\))/\1/'

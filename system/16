@@ -1,0 +1,13 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: calamber <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/07/31 18:38:44 by calamber          #+#    #+#              #
+#    Updated: 2018/07/31 18:41:07 by calamber         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+The service "cron" is used to schedule tasks. This can be done by appending the files in /etc/ called crod.d, cron.daily, cron.hourly, etc.. with scripts to be executed and the desired time interval. You can also use /etc/crontab and the crontab command.

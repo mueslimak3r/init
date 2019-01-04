@@ -1,0 +1,31 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: calamber <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/01 22:09:08 by calamber          #+#    #+#              #
+#    Updated: 2018/08/01 23:03:46 by calamber         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+TARGET=/etc/crontab
+BACKUP=/etc/.crontab_backup
+
+if [ ! -e $BACKUP ]; then
+	echo "no backup found, creating one."
+	cp $TARGET $BACKUP
+	exit 0
+fi
+
+MD5=`md5sum $TARGET | awk '{ print $1 }'`
+MD5_B=`md5sum $BACKUP | awk '{ print $1 }'`
+
+if [ "$MD5" != "$MD5_B" ]; then
+	echo "Crontab modified" | mail -s "Report" root
+fi
+
+sudo cp $TARGET $BACKUP

@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: calamber <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/07/30 18:52:54 by calamber          #+#    #+#              #
+#    Updated: 2018/07/30 19:25:03 by calamber         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+the file /etc/ssh/sshd_config contains the names of files in the same directory (/etc/ssh/), which are the private and public keys.
+
+#!/bin/bash
+less /etc/ssh/sshd_config

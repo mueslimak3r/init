@@ -1,0 +1,6 @@
+# The provider of the slash16.org is https://www.bookmyname.com for the domain.
+# AWS (Amazon) hosts their content.
+# I found this by running
+
+#!/bin/bash
+whois slash16.org
